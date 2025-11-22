@@ -1,0 +1,51 @@
+{
+  "name": "ts-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "simple_transfer.ts",
+  "packageManager": "pnpm@8.15.1",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "simple_transfer": "tsx simple_transfer.ts",
+    "simple_orderless_transfer": "tsx simple_orderless_transfer.ts",
+    "multi_agent_transfer": "tsx multi_agent_transfer.ts",
+    "simple_sponsored_transaction": "tsx simple_sponsored_transaction.ts",
+    "transfer_coin": "tsx transfer_coin.ts",
+    "transfer_between_fungible_stores": "tsx transfer_between_fungible_stores.ts",
+    "custom_client": "tsx custom_client.ts",
+    "publish_package_from_filepath": "tsx publish_package_from_filepath.ts",
+    "external_signing": "tsx external_signing.ts",
+    "sign_struct": "tsx sign_struct.ts",
+    "your_coin": "tsx your_coin.ts",
+    "your_fungible_asset": "tsx your_fungible_asset.ts",
+    "public_key_authenticator_account_abstraction": "tsx public_key_authenticator_account_abstraction.ts",
+    "hello_world_authenticator_account_abstraction": "tsx hello_world_authenticator_account_abstraction.ts",
+    "federated_keyless": "tsx federated_keyless.ts",
+    "jwk_update": "tsx jwk_update.ts",
+    "keyless": "tsx keyless.ts",
+    "keyless_mainnet": "tsx keyless_mainnet.ts",
+    "local_node": "tsx local_node.ts",
+    "swap": "tsx swap.ts",
+    "test": "run-s simple_transfer simple_orderless_transfer multi_agent_transfer simple_sponsored_transaction transfer_coin custom_client publish_package_from_filepath external_signing sign_struct your_coin your_fungible_asset public_key_authenticator_account_abstraction hello_world_authenticator_account_abstraction"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@aptos-labs/ts-sdk": "link:../..",
+    "@noble/curves": "2.0.0",
+    "@types/readline-sync": "1.4.8",
+    "dotenv": "17.2.2",
+    "npm-run-all": "4.1.5",
+    "readline-sync": "1.4.10",
+    "superagent": "10.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "typescript": "^5.8.3",
+    "tsx": "^4.20.5"
+  }
+}
